@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-es="NEXA Servicios - Presupuesto" data-en="NEXA Services - Presupuesto" data-fr="NEXA Services - Presupuesto" data-pt="NEXA Serviços - Presupuesto">NEXA Servicios - Presupuesto</title>
+    <link rel="stylesheet" href="public/style.css">
+</head>
+<body>
+        <!--Rodrigo Francia Sarase-->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <span></span><span></span><span></span>
+                </div>
+                <span class="logo-bold">NEXA</span>
+                <span class="logo-light">SERVICIOS</span>
+            </a>
+            <button class="menu-toggle" id="menu-toggle">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html" data-es="Inicio" data-en="Home" data-fr="Accueil" data-pt="Início">Inicio</a>
+                <a href="servicios.html" data-es="Servicios" data-en="Services" data-fr="Services" data-pt="Serviços">Servicios</a>
+                <a href="proceso.html" data-es="Proceso" data-en="Process" data-fr="Processus" data-pt="Processo">Proceso</a>
+                <a href="soluciones.html" data-es="Soluciones" data-en="Solutions" data-fr="Solutions" data-pt="Soluções">Soluciones</a>
+                <a href="contacto.html" data-es="Contacto" data-en="Contact" data-fr="Contact" data-pt="Contato">Contacto</a>
+                <a href="presupuesto.html" class="nav-btn-highlight" data-es="Cotizar" data-en="Quote" data-fr="Devis" data-pt="Orçamento">Cotizar</a>
+                <div class="lang-selector">
+                    <button class="current-lang-btn" id="current-lang-btn">
+                        <span id="current-lang">ES</span> ⏷
+                    </button>
+                    <div class="lang-dropdown">
+                        <button class="lang-option" data-lang="es">Español (ES)</button>
+                        <button class="lang-option" data-lang="en">English (EN)</button>
+                        <button class="lang-option" data-lang="fr">Français (FR)</button>
+                        <button class="lang-option" data-lang="pt">Português (PT)</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <section class="budget-section fade-in">
+            <div class="container">
+                <div class="page-header">
+                    <div class="subtitle">
+                        <span class="line"></span>
+                        <span data-es="COTIZACIÓN A MEDIDA" data-en="CUSTOM QUOTE" data-fr="DEVIS SUR MESURE" data-pt="ORÇAMENTO SOB MEDIDA">COTIZACIÓN A MEDIDA</span>
+                    </div>
+                    <h1 data-es="Calcula tu presupuesto" data-en="Calculate your budget" data-fr="Calculez votre budget" data-pt="Calcule seu orçamento">Calcula tu presupuesto</h1>
+                    <p data-es="Selecciona las características que necesitas para tu sistema en Python y obtén un estimado al instante." data-en="Select the features you need for your Python system and get an instant estimate." data-fr="Sélectionnez les fonctionnalités dont vous avez besoin pour votre système Python et obtenez une estimation instantanée." data-pt="Selecione os recursos que você precisa para o seu sistema em Python e obtenha uma estimativa instantânea.">Selecciona las características que necesitas para tu sistema en Python y obtén un estimado al instante.</p>
+                </div>
+                <div class="budget-grid">
+                    <div class="budget-form">
+                        <h3 data-es="1. Tipo de Industria" data-en="1. Industry Type" data-fr="1. Type d'Industrie" data-pt="1. Tipo de Indústria">1. Tipo de Industria</h3>
+                        <div class="options-grid">
+                            <label class="option-card">
+                                <input type="radio" name="industry" value="1500" checked>
+                                <div class="card-content">
+                                    <span class="icon">🛒</span>
+                                    <span data-es="Tienda / Retail" data-en="Store / Retail" data-fr="Magasin / Détail" data-pt="Loja / Varejo">Tienda / Retail</span>
+                                </div>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="industry" value="2500">
+                                <div class="card-content">
+                                    <span class="icon">📦</span>
+                                    <span data-es="Almacén / Logística" data-en="Warehouse / Logistics" data-fr="Entrepôt / Logistique" data-pt="Armazém / Logística">Almacén / Logística</span>
+                                </div>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="industry" value="4000">
+                                <div class="card-content">
+                                    <span class="icon">🏥</span>
+                                    <span data-es="Clínica / Hospital" data-en="Clinic / Hospital" data-fr="Clinique / Hôpital" data-pt="Clínica / Hospital">Clínica / Hospital</span>
+                                </div>
+                            </label>
+                        </div>
+                        <h3 data-es="2. Módulos Adicionales" data-en="2. Additional Modules" data-fr="2. Modules Supplémentaires" data-pt="2. Módulos Adicionais">2. Módulos Adicionales</h3>
+                        <div class="modules-grid">
+                            <label class="module-check">
+                                <input type="checkbox" value="500" class="mod-check">
+                                <span data-es="Facturación Electrónica" data-en="Electronic Billing" data-fr="Facturation Électronique" data-pt="Faturamento Eletrônico">Facturación Electrónica</span>
+                            </label>
+                            <label class="module-check">
+                                <input type="checkbox" value="800" class="mod-check">
+                                <span data-es="App Móvil" data-en="Mobile App" data-fr="Application Mobile" data-pt="App Móvel">App Móvil</span>
+                            </label>
+                            <label class="module-check">
+                                <input type="checkbox" value="600" class="mod-check">
+                                <span data-es="Integración API" data-en="API Integration" data-fr="Intégration API" data-pt="Integração API">Integración API</span>
+                            </label>
+                            <label class="module-check">
+                                <input type="checkbox" value="400" class="mod-check">
+                                <span data-es="Reportes Avanzados" data-en="Advanced Reports" data-fr="Rapports Avancés" data-pt="Relatórios Avançados">Reportes Avanzados</span>
+                            </label>
+                        </div>
+                        <h3 data-es="3. Tus Datos" data-en="3. Your Details" data-fr="3. Vos Détails" data-pt="3. Seus Dados">3. Tus Datos</h3>
+                        <input type="text" id="user-name" class="form-input" placeholder="Nombre completo" data-es-placeholder="Nombre completo" data-en-placeholder="Full name" data-fr-placeholder="Nom complet" data-pt-placeholder="Nome completo">
+                        <input type="email" id="user-email" class="form-input" placeholder="Correo electrónico" data-es-placeholder="Correo electrónico" data-en-placeholder="Email address" data-fr-placeholder="Adresse e-mail" data-pt-placeholder="Endereço de e-mail">
+                    </div>
+                    <div class="budget-summary">
+                        <div class="summary-box">
+                            <h3 data-es="Resumen de Cotización" data-en="Quote Summary" data-fr="Résumé du Devis" data-pt="Resumo do Orçamento">Resumen de Cotización</h3>
+                            <div class="summary-row">
+                                <span data-es="Sistema Base:" data-en="Base System:" data-fr="Système de Base:" data-pt="Sistema Base:">Sistema Base:</span>
+                                <span id="base-price">$ 1,500</span>
+                            </div>
+                            <div class="summary-row">
+                                <span data-es="Módulos:" data-en="Modules:" data-fr="Modules:" data-pt="Módulos:">Módulos:</span>
+                                <span id="modules-price">$ 0</span>
+                            </div>
+                            <div class="summary-total">
+                                <span data-es="Total Estimado:" data-en="Estimated Total:" data-fr="Total Estimé:" data-pt="Total Estimado:">Total Estimado:</span>
+                                <span id="total-price" class="text-green">$ 1,500</span>
+                            </div>
+                            <button id="btn-whatsapp" class="btn-dark full-width mt-20" data-es="Solicitar Proyecto por WhatsApp ↗" data-en="Request via WhatsApp ↗" data-fr="Demander via WhatsApp ↗" data-pt="Solicitar pelo WhatsApp ↗">Solicitar Proyecto por WhatsApp ↗</button>
+                            <p class="summary-note" data-es="* Los valores son referenciales." data-en="* Values are for reference only." data-fr="* Les valeurs sont à titre indicatif." data-pt="* Os valores são apenas para referência.">* Los valores son referenciales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="logo-bold text-white">NEXA</span>
+                    </a>
+                    <p data-es="Desarrollo de sistemas escalables en Python para empresas y proyectos de alta exigencia." data-en="Development of scalable Python systems for highly demanding companies and projects." data-fr="Développement de systèmes Python évolutifs pour les entreprises et projets très exigeants." data-pt="Desenvolvimento de sistemas escaláveis em Python para empresas e projetos de alta exigência.">
+                        Desarrollo de sistemas escalables en Python para empresas y proyectos de alta exigencia.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-es="NAVEGACIÓN" data-en="NAVIGATION" data-fr="NAVIGATION" data-pt="NAVEGAÇÃO">NAVEGACIÓN</h4>
+                    <a href="index.html" data-es="Inicio" data-en="Home" data-fr="Accueil" data-pt="Início">Inicio</a>
+                    <a href="servicios.html" data-es="Servicios" data-en="Services" data-fr="Services" data-pt="Serviços">Servicios</a>
+                    <a href="proceso.html" data-es="Proceso" data-en="Process" data-fr="Processus" data-pt="Processo">Proceso</a>
+                    <a href="soluciones.html" data-es="Soluciones" data-en="Solutions" data-fr="Solutions" data-pt="Soluções">Soluciones</a>
+                </div>
+                <div class="footer-col">
+                    <h4 data-es="SERVICIOS" data-en="SERVICES" data-fr="SERVICES" data-pt="SERVIÇOS">SERVICIOS</h4>
+                    <a href="servicio_tiendas.html" data-es="Sistemas para Tiendas" data-en="Store Systems" data-fr="Systèmes pour Magasins" data-pt="Sistemas para Lojas">Sistemas para Tiendas</a>
+                    <a href="servicio_almacenes.html" data-es="Gestión Logística" data-en="Logistics Management" data-fr="Gestion Logistique" data-pt="Gestão Logística">Gestión Logística</a>
+                    <a href="servicio_hospitales.html" data-es="Software Clínico" data-en="Clinical Software" data-fr="Logiciel Clinique" data-pt="Software Clínico">Software Clínico</a>
+                    <a href="servicios.html" data-es="APIs y Backend Web" data-en="APIs and Web Backend" data-fr="API et Backend Web" data-pt="APIs e Backend Web">APIs y Backend Web</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-es="© 2026 Nexa Servicios Profesionales. Todos los derechos reservados." data-en="© 2026 Nexa Professional Services. All rights reserved." data-fr="© 2026 Nexa Services Professionnels. Tous droits réservés." data-pt="© 2026 Nexa Serviços Profissionais. Todos os direitos reservados.">
+                    © 2026 Nexa Servicios Profesionales. Todos los derechos reservados.
+                </p>
+                <a href="#" class="back-to-top" data-es="↑ TOP" data-en="↑ TOP" data-fr="↑ HAUT" data-pt="↑ TOPO">↑ TOP</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const currSpan = document.getElementById('current-lang');
+        const langOpts = document.querySelectorAll('.lang-option');
+        const toggle = document.getElementById('menu-toggle');
+        const links = document.getElementById('nav-links');
+        
+        langOpts.forEach(opt => {
+            opt.addEventListener('click', () => {
+                const lg = opt.getAttribute('data-lang');
+                currSpan.textContent = lg.toUpperCase();
+                document.documentElement.lang = lg;
+                
+                document.querySelectorAll('[data-es]').forEach(e => {
+                    if(e.tagName === 'TITLE') document.title = e.getAttribute('data-' + lg);
+                    else e.innerHTML = e.getAttribute('data-' + lg);
+                });
+                
+                document.querySelectorAll('[data-es-placeholder]').forEach(e => {
+                    e.setAttribute('placeholder', e.getAttribute('data-' + lg + '-placeholder'));
+                });
+            });
+        });
+        
+        toggle.addEventListener('click', () => {
+            links.classList.toggle('active');
+        });
+        
+        const radios = document.querySelectorAll('input[name="industry"]');
+        const checks = document.querySelectorAll('.mod-check');
+        const basePriceEl = document.getElementById('base-price');
+        const modsPriceEl = document.getElementById('modules-price');
+        const totalPriceEl = document.getElementById('total-price');
+        const btnWpp = document.getElementById('btn-whatsapp');
+        const userName = document.getElementById('user-name');
+        const userEmail = document.getElementById('user-email');
+        
+        function calculate() {
+            let base = 0;
+            radios.forEach(r => { if(r.checked) base = parseInt(r.value); });
+            
+            let mods = 0;
+            checks.forEach(c => { if(c.checked) mods += parseInt(c.value); });
+            
+            const total = base + mods;
+            
+            basePriceEl.textContent = '$ ' + base.toLocaleString();
+            modsPriceEl.textContent = '$ ' + mods.toLocaleString();
+            totalPriceEl.textContent = '$ ' + total.toLocaleString();
+        }
+        
+        radios.forEach(r => r.addEventListener('change', calculate));
+        checks.forEach(c => c.addEventListener('change', calculate));
+
+        btnWpp.addEventListener('click', () => {
+            let selectedIndustry = '';
+            radios.forEach(r => {
+                if(r.checked) {
+                    selectedIndustry = r.nextElementSibling.querySelector('span:nth-child(2)').textContent;
+                }
+            });
+            
+            let selectedMods = [];
+            checks.forEach(c => {
+                if(c.checked) {
+                    selectedMods.push(c.nextElementSibling.textContent);
+                }
+            });
+            
+            let modsText = selectedMods.length > 0 ? selectedMods.join(', ') : 'Ninguno';
+            let total = totalPriceEl.textContent;
+            let name = userName.value || 'Cliente';
+            let email = userEmail.value || 'No proporcionado';
+            
+            let msg = `Hola NEXA Servicios, mi nombre es ${name} y mi correo es ${email}. Me gustaría solicitar la siguiente cotización:\n\n📌 Industria: ${selectedIndustry}\n⚙️ Módulos: ${modsText}\n💰 Total Estimado: ${total}`;
+            let url = `https://wa.me/51959413098?text=${encodeURIComponent(msg)}`;
+            window.open(url, '_blank');
+        });
+
+    </script>
+</body>
+</html>
