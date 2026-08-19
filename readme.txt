@@ -3,6 +3,7 @@ Integrantes:
     Cama Limachi Adrian Alejandro
     Fernandez Segura Alvaro Sebastian
     Huarcaya Vargas Anderson Ernesto
+    Crispin De la Cruz, Franklin Anderson
 
 NEXA Servicios es un sitio web corporativo para una empresa (o freelancer/estudio) que se dedica al desarrollo de software a medida en Python para negocios que necesitan digitalizar sus operaciones.
 
